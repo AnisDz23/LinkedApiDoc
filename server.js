@@ -9,8 +9,9 @@ const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Initialize SQLite database
-const db = new Database('api_doc.db');
+// Initialize SQLite database - persist in mounted volume
+const dbPath = path.join(__dirname, 'data', 'linkedapi.db');
+const db = new Database(dbPath);
 
 // Create tables
 db.exec(`
@@ -165,10 +166,109 @@ app.delete('/api/endpoints/:id', userAuth, (req, res) => {
   res.json({ success: true, message: 'Endpoint deleted' });
 });
 
+// Controller descriptions mapping
+const controllerDescriptions = {
+  'TRS_TIERS': 'Gestion des tiers (clients, fournisseurs, employés).',
+  'VTE_DOCUMENT': 'Gestion des documents de vente (factures, commandes, avoirs).',
+  'STK_STOCK': 'Gestion des stocks (mouvements, inventaires, régularisations).',
+  'ACH_DOCUMENT': 'Gestion des documents d\'achat (commandes, réceptions, retours).',
+  'BSE_PRODUITS': 'Gestion des produits (références, familles, variantes).',
+  'CRM_TOURNEE': 'Gestion des tournées commerciales (planning, visites, actions).',
+  'STK_DOCUMENT': 'Gestion des documents de stock (entrées, sorties, transferts).',
+  'VTE_COMPTOIR': 'Gestion des ventes au comptoir (tickets, paiements, retours).'
+};
+
+// Method prefix descriptions mapping
+const methodPrefixes = {
+  'Get': 'Récupère les détails de {entité}.',
+  'Select': 'Récupère une liste filtrée de {entité}.',
+  'Change': 'Modifie le statut de {entité}.',
+  'Save': 'Enregistre ou met à jour {entité}.',
+  'Import': 'Importe des données de {entité} depuis un fichier.',
+  'Export': 'Exporte des données de {entité} vers un fichier.',
+  'Delete': 'Supprime {entité}.',
+  'Recalcul': 'Recalcule les données de {entité}.',
+  'Fusion': 'Fusionne plusieurs {entité} en un seul.'
+};
+
+// Generate description based on rules
+function generateDescription(endpoint) {
+  const { controller, route, parameters } = endpoint;
+  
+  // Get base controller description
+  const baseDesc = controllerDescriptions[controller] || `Gestion des ${controller.toLowerCase().replace('_', ' ')}.`;
+  
+  // Extract method name from route
+  const routePart = route.replace('/api/', '').replace(`${controller}/`, '');
+  const methodName = routePart;
+  
+  // Find matching prefix
+  let methodDesc = '';
+  for (const [prefix, desc] of Object.entries(methodPrefixes)) {
+    if (methodName.startsWith(prefix)) {
+      const entityName = methodName.replace(prefix, '').toLowerCase();
+      methodDesc = desc.replace('{entité}', entityName);
+      break;
+    }
+  }
+  
+  // Build parameters description
+  let paramsDesc = '';
+  if (parameters && parameters !== '{}') {
+    try {
+      const paramsObj = JSON.parse(parameters);
+      const paramKeys = Object.keys(paramsObj);
+      
+      if (paramKeys.length > 0) {
+        const paramDescriptions = [];
+        for (const key of paramKeys) {
+          if (key === 'ids') {
+            paramDescriptions.push(`ids (liste des identifiants)`);
+          } else if (key === 'sec') {
+            paramDescriptions.push(`sec (secteur)`);
+          } else if (key === 'act') {
+            paramDescriptions.push(`act (statut : ACTIVE/INACTIVE)`);
+          } else {
+            paramDescriptions.push(`${key}`);
+          }
+        }
+        paramsDesc = ` Paramètres : ${paramDescriptions.join(', ')}.`;
+      }
+    } catch (e) {
+      // Invalid JSON, skip params
+    }
+  }
+  
+  // Combine descriptions
+  let fullDescription = baseDesc;
+  if (methodDesc) {
+    fullDescription += ' ' + methodDesc;
+  }
+  if (paramsDesc) {
+    fullDescription += paramsDesc;
+  }
+  
+  return fullDescription;
+}
+
 // Get available controllers (for filter)
 app.get('/api/controllers', userAuth, (req, res) => {
   const controllers = db.prepare('SELECT DISTINCT controller FROM api_endpoints ORDER BY controller').all();
   res.json(controllers.map(c => c.controller));
+});
+
+// Update descriptions for endpoints with empty descriptions
+app.post('/api/update-descriptions', userAuth, (req, res) => {
+  const endpoints = db.prepare("SELECT * FROM api_endpoints WHERE description IS NULL OR description = ''").all();
+  
+  let updatedCount = 0;
+  for (const endpoint of endpoints) {
+    const description = generateDescription(endpoint);
+    db.prepare("UPDATE api_endpoints SET description = ?, updated_at = CURRENT_TIMESTAMP WHERE id = ?").run(description, endpoint.id);
+    updatedCount++;
+  }
+  
+  res.json({ success: true, updated: updatedCount, message: `${updatedCount} descriptions updated` });
 });
 
 // Serve the main HTML file
