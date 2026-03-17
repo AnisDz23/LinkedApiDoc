@@ -439,6 +439,24 @@ footer p {
   margin: 0;
 }
 
+/* Version Badge */
+.version-badge {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: #4dabf7;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.dark-mode .version-badge {
+  background: #6a5acd; /* Couleur adaptée au dark mode */
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   header {
