@@ -1,0 +1,211 @@
+/* Dark Mode Theme Styles */
+
+/* Dark mode overrides using CSS variables */
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --card-bg: #1e1e1e;
+  --table-row-odd: #1e1e1e;
+  --table-row-even: #2d2d2d;
+  --border-color: #333333;
+  --input-bg: #333333;
+  --input-border: #444444;
+  --header-gradient-start: #1a1a2e;
+  --header-gradient-end: #16213e;
+  --modal-bg: #1e1e1e;
+  --modal-border: #333333;
+  --hover-bg: #2a2a2a;
+  --code-bg: #252525;
+  --code-text: #e0e0e0;
+  --placeholder-color: #888888;
+}
+
+.dark-mode body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.dark-mode header {
+  background: linear-gradient(135deg, var(--header-gradient-start), var(--header-gradient-end));
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .filters,
+.dark-mode .endpoints-table-container,
+.dark-mode .modal-content,
+.dark-mode .login-box {
+  background-color: var(--card-bg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .endpoints-table thead {
+  background-color: var(--table-row-odd);
+}
+
+.dark-mode .endpoints-table th {
+  color: var(--text-color);
+  border-bottom-color: var(--border-color);
+}
+
+.dark-mode .endpoints-table td {
+  border-bottom-color: var(--border-color);
+}
+
+.dark-mode .endpoints-table tbody tr:hover {
+  background-color: var(--hover-bg);
+}
+
+.dark-mode .filter-group label {
+  color: var(--text-color);
+}
+
+.dark-mode .filter-group input,
+.dark-mode .filter-group select {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border-color: var(--input-border);
+}
+
+.dark-mode .filter-group input:focus,
+.dark-mode .filter-group select:focus {
+  border-color: #4dabf7;
+  box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.2);
+}
+
+.dark-mode .route-text {
+  color: #4dabf7;
+}
+
+.dark-mode .parameters-text {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+}
+
+.dark-mode .description-text {
+  color: var(--text-color);
+}
+
+.dark-mode .modal-header h2 {
+  color: #4dabf7;
+}
+
+.dark-mode .modal-header {
+  border-bottom-color: var(--modal-border);
+}
+
+.dark-mode .login-box h2 {
+  color: #4dabf7;
+}
+
+.dark-mode .form-group label {
+  color: var(--text-color);
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group select,
+.dark-mode .form-group textarea {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border-color: var(--input-border);
+}
+
+.dark-mode .form-group input:focus,
+.dark-mode .form-group select:focus,
+.dark-mode .form-group textarea:focus {
+  border-color: #4dabf7;
+  box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.2);
+}
+
+.dark-mode .form-group small {
+  color: var(--placeholder-color);
+}
+
+.dark-mode .form-actions,
+.dark-mode .modal-header {
+  border-top-color: var(--modal-border);
+}
+
+.dark-mode .btn-secondary {
+  background-color: #333333;
+  color: #e0e0e0;
+}
+
+.dark-mode .btn-secondary:hover {
+  background-color: #4dabf7;
+  color: #121212;
+}
+
+.dark-mode .btn-outline {
+  border-color: #4dabf7;
+  color: #4dabf7;
+}
+
+.dark-mode .btn-outline:hover {
+  background-color: #4dabf7;
+  color: #121212;
+}
+
+.dark-mode .btn-primary {
+  background-color: #4dabf7;
+  color: #121212;
+}
+
+.dark-mode .btn-primary:hover {
+  background-color: #3a9ae8;
+}
+
+.dark-mode .close {
+  color: var(--text-color);
+}
+
+.dark-mode .close:hover {
+  color: #e53e3e;
+}
+
+.dark-mode .hint {
+  color: var(--placeholder-color);
+}
+
+.dark-mode .loading {
+  color: var(--placeholder-color);
+}
+
+.dark-mode .method-badge.get { background: #1a2f2e; color: #4db8a8; }
+.dark-mode .method-badge.post { background: #1a2a3d; color: #4d9ae8; }
+.dark-mode .method-badge.put { background: #2f2a1a; color: #e8b84d; }
+.dark-mode .method-badge.delete { background: #3d1a1a; color: #e84d4d; }
+.dark-mode .method-badge.patch { background: #2a1a3d; color: #b84de8; }
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  margin-right: 0.75rem;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.dark-mode .theme-toggle {
+  background: rgba(77, 171, 247, 0.2);
+}
+
+.dark-mode .theme-toggle:hover {
+  background: rgba(77, 171, 247, 0.3);
+}
+
+/* Modal overlay in dark mode */
+.dark-mode .modal {
+  background-color: rgba(0, 0, 0, 0.7);
+}

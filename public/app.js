@@ -14,9 +14,11 @@ const endpointsTableBody = document.getElementById('endpointsTableBody');
 const filterMethod = document.getElementById('filterMethod');
 const filterRoute = document.getElementById('filterRoute');
 const filterController = document.getElementById('filterController');
+const themeToggle = document.getElementById('themeToggle');
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
   checkAuth();
   loadControllers();
   setupEventListeners();
@@ -34,6 +36,27 @@ function checkAuth() {
   }
 }
 
+// Theme Management
+function initTheme() {
+  const savedTheme = localStorage.getItem('darkMode');
+  if (savedTheme === 'true') {
+    document.body.classList.add('dark-mode');
+    updateThemeIcon(true);
+  }
+}
+
+function toggleTheme() {
+  document.body.classList.toggle('dark-mode');
+  const isDark = document.body.classList.contains('dark-mode');
+  localStorage.setItem('darkMode', isDark);
+  updateThemeIcon(isDark);
+}
+
+function updateThemeIcon(isDark) {
+  themeToggle.textContent = isDark ? '🌙' : '☀️';
+  themeToggle.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+}
+
 // Setup Event Listeners
 function setupEventListeners() {
   // Login
@@ -44,6 +67,9 @@ function setupEventListeners() {
   
   // Add Endpoint
   document.getElementById('addEndpointBtn').addEventListener('click', () => openModal());
+  
+  // Theme Toggle
+  themeToggle.addEventListener('click', toggleTheme);
   
   // Close Modal
   document.getElementById('closeModal').addEventListener('click', closeModal);
