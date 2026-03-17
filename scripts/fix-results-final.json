@@ -1,0 +1,560 @@
+[
+  {
+    "id": 3,
+    "route": "api/GetDesignCaisses",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 4,
+    "route": "api/GetDesignMagasin",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 5,
+    "route": "api/BSE_MAGASIN/ChangeType",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 6,
+    "route": "api/RecalculSoldeTiersExe",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 7,
+    "route": "api/TRS_TIERS/GetSoldeTiers",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 8,
+    "route": "api/TRS_TIERS/GetValuesTiers",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 9,
+    "route": "api/TRS_TIERS/RecalculSoldeTiers",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 10,
+    "route": "api/TRS_TIERS/AttacheUser",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 19,
+    "route": "api/ACH_DOCUMENT/GetAllowCreance",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 22,
+    "route": "api/ACH_DOCUMENT_DETAIL/GetRecapClientsQte",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 29,
+    "route": "api/BSE_COLIS/SaveMesures",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 35,
+    "route": "api/RecalculSoldeCaisse",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 36,
+    "route": "api/GetListCaisses",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 39,
+    "route": "api/BSE_PRODUITS/GetProdVariantPrint",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 41,
+    "route": "api/BSE_PRODUITS/GetProdVariants",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 42,
+    "route": "api/BSE_PRODUITS/GetMesureJson",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 43,
+    "route": "api/GetScaleProducts",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 44,
+    "route": "api/RegenerateCB",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 45,
+    "route": "api/UpdateIndexScale",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 47,
+    "route": "api/GetNotifBalance",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 48,
+    "route": "api/ClearNotifBalance",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 51,
+    "route": "api/GetNbrConsigne",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 53,
+    "route": "api/DeleteDoubleLots",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 57,
+    "route": "api/GetOtherProduct",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 71,
+    "route": "api/BSE_PRODUITS/ImportData",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 72,
+    "route": "api/BSE_PRODUITS/GetImportResult",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 73,
+    "route": "api/BSE_PRODUITS/GetNbrBloqDesktop",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 76,
+    "route": "api/BSE_PRODUIT_PACK/SelectProdPack",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 83,
+    "route": "api/BSE_VARIANTS/ImportData",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 87,
+    "route": "api/CHG_DOCUMENT/SaveCharges",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 98,
+    "route": "api/CRM_GAOLS/GetTypeGoals",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 99,
+    "route": "api/CRM_GAOLS/GetTypeGoalsFidelite",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 100,
+    "route": "api/CRM_GAOLS/GetGoalsTiers",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 106,
+    "route": "api/CRM_GAOLS_VENDORS/SelectVendors",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 110,
+    "route": "api/GetNbrPromo",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 118,
+    "route": "api/CRM_TOURNEE/GetRecapTour",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 128,
+    "route": "api/DbTools/BackupBdd",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 129,
+    "route": "api/DbTools/GetProgress",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 130,
+    "route": "api/GetInitDbSource",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 131,
+    "route": "api/RunInitDatabase",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 134,
+    "route": "api/EMP_CONTRAT/DeleteEmp",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 137,
+    "route": "api/EMP_SHEET/SaveSheet",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 140,
+    "route": "api/ProdComposit/ImportData",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 144,
+    "route": "api/ProdPrix/LoadListPrix",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 149,
+    "route": "api/ProdPrix/ImportData",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 151,
+    "route": "api/REST_OBSERVATION/ImportData",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 153,
+    "route": "api/REST_SUPLEMENT/ImportData",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 154,
+    "route": "api/REST_TABLES/GetEmproteeState",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 177,
+    "route": "api/GetCurrentInvent",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 183,
+    "route": "api/STK_INVENTAIRE_DETAIL/AjustStock",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 184,
+    "route": "api/STK_INVENTAIRE_DETAIL/ImportData",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 193,
+    "route": "api/STK_PRODUCTION_COLORS/UpdateColors",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 201,
+    "route": "api/STK_STOCK/RecalculStockOld",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 202,
+    "route": "api/STK_STOCK/CorrectionStock",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 207,
+    "route": "api/STK_STOCK/FusionALL",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 210,
+    "route": "api/STK_STOCK/LoadDiagnostic",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 211,
+    "route": "api/GetStkPrintDetail",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 213,
+    "route": "api/STK_STOCK/ClearProgres",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 215,
+    "route": "api/STK_STOCK/ImportData",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 216,
+    "route": "api/STK_STOCK/GetListExp",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 225,
+    "route": "api/STK_TRANSFERT/GetSortCode",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 227,
+    "route": "api/STK_VENTE/GetPriceList",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 230,
+    "route": "api/GetListExercices1",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 231,
+    "route": "api/SYS_EXERCICE/GetProgress",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 234,
+    "route": "api/DeletePaiements",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 238,
+    "route": "api/TRS_CREANCE/SelectNPDocs",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 240,
+    "route": "api/TRS_ENCAISS/GetAgencesBancaires",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 250,
+    "route": "api/TRS_ENCAISS/RestoreDeleted",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 253,
+    "route": "api/TRS_MONEY/Convert",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 260,
+    "route": "api/TRS_TIERS/GenerateSInit",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 263,
+    "route": "api/TRS_TIERS/SaveOrderTiers",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 270,
+    "route": "api/TRS_TIERS/GetListWilaya",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 271,
+    "route": "api/TRS_TIERS/GetListOrigine",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 277,
+    "route": "api/TRS_TIERS/GenerateUsers",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 279,
+    "route": "api/TRS_TIERS/DetachUser",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 280,
+    "route": "api/TRS_TIERS/DisableUsers",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 284,
+    "route": "api/TRS_TIERS/ClearProgres",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 300,
+    "route": "api/VTE_COMPTOIR/GetNewSalesMobile",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 310,
+    "route": "api/VTE_COMPTOIR/PaiementCash",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 312,
+    "route": "api/VTE_COMPTOIR/SelectDetailGroup",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 313,
+    "route": "api/VTE_COMPTOIR/SelectGroup",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 314,
+    "route": "api/VTE_DOCUMENT/TestCrud",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 316,
+    "route": "api/VTE_DOCUMENT/GetNbrWaitSales",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 317,
+    "route": "api/VTE_DOCUMENT/RestoreDeleted",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 318,
+    "route": "api/VTE_DOCUMENT/GetNewRestoCmd",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 321,
+    "route": "api/VTE_DOCUMENT/UpdeStateLivr",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 330,
+    "route": "api/VTE_DOCUMENT/CancelCmd",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 344,
+    "route": "api/VTE_DOCUMENT/UpQteTransfert",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 346,
+    "route": "api/VTE_DOCUMENT/GenerateCreance",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 347,
+    "route": "api/VTE_DOCUMENT/GetAllowCreance",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 350,
+    "route": "api/VTE_DOCUMENT/SelectDetailGroup",
+    "method": "POST",
+    "status": "failed"
+  },
+  {
+    "id": 361,
+    "route": "api/WF_STATES/GetWFDocuments",
+    "method": "GET",
+    "status": "failed"
+  },
+  {
+    "id": 372,
+    "route": "/api/TEST_PERSIST",
+    "method": "GET",
+    "status": "failed"
+  }
+]

@@ -1,0 +1,682 @@
+[
+  {
+    "id": 5,
+    "route": "api/BSE_MAGASIN/ChangeType",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 7,
+    "route": "api/TRS_TIERS/GetSoldeTiers",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 8,
+    "route": "api/TRS_TIERS/GetValuesTiers",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 9,
+    "route": "api/TRS_TIERS/RecalculSoldeTiers",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 10,
+    "route": "api/TRS_TIERS/AttacheUser",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 19,
+    "route": "api/ACH_DOCUMENT/GetAllowCreance",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 22,
+    "route": "api/ACH_DOCUMENT_DETAIL/GetRecapClientsQte",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 29,
+    "route": "api/BSE_COLIS/SaveMesures",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 35,
+    "route": "api/RecalculSoldeCaisse",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 36,
+    "route": "api/GetListCaisses",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 39,
+    "route": "api/BSE_PRODUITS/GetProdVariantPrint",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 41,
+    "route": "api/BSE_PRODUITS/GetProdVariants",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 42,
+    "route": "api/BSE_PRODUITS/GetMesureJson",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 43,
+    "route": "api/GetScaleProducts",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 44,
+    "route": "api/RegenerateCB",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 45,
+    "route": "api/UpdateIndexScale",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 47,
+    "route": "api/GetNotifBalance",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 48,
+    "route": "api/ClearNotifBalance",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 51,
+    "route": "api/GetNbrConsigne",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 53,
+    "route": "api/DeleteDoubleLots",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 57,
+    "route": "api/GetOtherProduct",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 71,
+    "route": "api/BSE_PRODUITS/ImportData",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 72,
+    "route": "api/BSE_PRODUITS/GetImportResult",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 73,
+    "route": "api/BSE_PRODUITS/GetNbrBloqDesktop",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 76,
+    "route": "api/BSE_PRODUIT_PACK/SelectProdPack",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 83,
+    "route": "api/BSE_VARIANTS/ImportData",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 87,
+    "route": "api/CHG_DOCUMENT/SaveCharges",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 98,
+    "route": "api/CRM_GAOLS/GetTypeGoals",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 99,
+    "route": "api/CRM_GAOLS/GetTypeGoalsFidelite",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 100,
+    "route": "api/CRM_GAOLS/GetGoalsTiers",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 106,
+    "route": "api/CRM_GAOLS_VENDORS/SelectVendors",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 110,
+    "route": "api/GetNbrPromo",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 118,
+    "route": "api/CRM_TOURNEE/GetRecapTour",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 128,
+    "route": "api/DbTools/BackupBdd",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 129,
+    "route": "api/DbTools/GetProgress",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 130,
+    "route": "api/GetInitDbSource",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 134,
+    "route": "api/EMP_CONTRAT/DeleteEmp",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 137,
+    "route": "api/EMP_SHEET/SaveSheet",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 140,
+    "route": "api/ProdComposit/ImportData",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 144,
+    "route": "api/ProdPrix/LoadListPrix",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 149,
+    "route": "api/ProdPrix/ImportData",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 151,
+    "route": "api/REST_OBSERVATION/ImportData",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 153,
+    "route": "api/REST_SUPLEMENT/ImportData",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 154,
+    "route": "api/REST_TABLES/GetEmproteeState",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 177,
+    "route": "api/GetCurrentInvent",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 183,
+    "route": "api/STK_INVENTAIRE_DETAIL/AjustStock",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 184,
+    "route": "api/STK_INVENTAIRE_DETAIL/ImportData",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 201,
+    "route": "api/STK_STOCK/RecalculStockOld",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 202,
+    "route": "api/STK_STOCK/CorrectionStock",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 207,
+    "route": "api/STK_STOCK/FusionALL",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 210,
+    "route": "api/STK_STOCK/LoadDiagnostic",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 211,
+    "route": "api/GetStkPrintDetail",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 213,
+    "route": "api/STK_STOCK/ClearProgres",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 215,
+    "route": "api/STK_STOCK/ImportData",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 216,
+    "route": "api/STK_STOCK/GetListExp",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 225,
+    "route": "api/STK_TRANSFERT/GetSortCode",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 227,
+    "route": "api/STK_VENTE/GetPriceList",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 230,
+    "route": "api/GetListExercices1",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 231,
+    "route": "api/SYS_EXERCICE/GetProgress",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 238,
+    "route": "api/TRS_CREANCE/SelectNPDocs",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 240,
+    "route": "api/TRS_ENCAISS/GetAgencesBancaires",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 250,
+    "route": "api/TRS_ENCAISS/RestoreDeleted",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 253,
+    "route": "api/TRS_MONEY/Convert",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 260,
+    "route": "api/TRS_TIERS/GenerateSInit",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 263,
+    "route": "api/TRS_TIERS/SaveOrderTiers",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 270,
+    "route": "api/TRS_TIERS/GetListWilaya",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 271,
+    "route": "api/TRS_TIERS/GetListOrigine",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 277,
+    "route": "api/TRS_TIERS/GenerateUsers",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 279,
+    "route": "api/TRS_TIERS/DetachUser",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 280,
+    "route": "api/TRS_TIERS/DisableUsers",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 284,
+    "route": "api/TRS_TIERS/ClearProgres",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 300,
+    "route": "api/VTE_COMPTOIR/GetNewSalesMobile",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 312,
+    "route": "api/VTE_COMPTOIR/SelectDetailGroup",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 314,
+    "route": "api/VTE_DOCUMENT/TestCrud",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 316,
+    "route": "api/VTE_DOCUMENT/GetNbrWaitSales",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 317,
+    "route": "api/VTE_DOCUMENT/RestoreDeleted",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 318,
+    "route": "api/VTE_DOCUMENT/GetNewRestoCmd",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 321,
+    "route": "api/VTE_DOCUMENT/UpdeStateLivr",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 330,
+    "route": "api/VTE_DOCUMENT/CancelCmd",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 344,
+    "route": "api/VTE_DOCUMENT/UpQteTransfert",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 346,
+    "route": "api/VTE_DOCUMENT/GenerateCreance",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 347,
+    "route": "api/VTE_DOCUMENT/GetAllowCreance",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 350,
+    "route": "api/VTE_DOCUMENT/SelectDetailGroup",
+    "method": "POST",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 361,
+    "route": "api/WF_STATES/GetWFDocuments",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  },
+  {
+    "id": 372,
+    "route": "/api/TEST_PERSIST",
+    "method": "GET",
+    "params": {},
+    "status": "skipped",
+    "reason": "no matching method or no params"
+  }
+]
