@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linked Solutions API Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <div class="logo">
+        <h1>🔗 Linked Solutions</h1>
+        <span class="subtitle">API Documentation</span>
+      </div>
+      <div class="header-actions">
+        <button id="addEndpointBtn" class="btn btn-primary">+ Add Endpoint</button>
+        <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Login Modal -->
+      <div id="loginModal" class="modal">
+        <div class="modal-content login-box">
+          <h2>🔐 Login Required</h2>
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Login</button>
+          </form>
+          <p class="hint">Default: admin / admin</p>
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <section class="filters">
+        <div class="filter-group">
+          <label for="filterMethod">HTTP Method</label>
+          <select id="filterMethod">
+            <option value="">All Methods</option>
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+            <option value="PUT">PUT</option>
+            <option value="DELETE">DELETE</option>
+            <option value="PATCH">PATCH</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterRoute">Route</label>
+          <input type="text" id="filterRoute" placeholder="Search route...">
+        </div>
+        <div class="filter-group">
+          <label for="filterController">Controller</label>
+          <select id="filterController">
+            <option value="">All Controllers</option>
+          </select>
+        </div>
+        <button id="applyFilters" class="btn btn-secondary">Apply Filters</button>
+        <button id="clearFilters" class="btn btn-outline">Clear</button>
+      </section>
+
+      <!-- Endpoints Table -->
+      <section class="endpoints-table-container">
+        <table class="endpoints-table">
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Route</th>
+              <th>Parameters</th>
+              <th>Controller</th>
+              <th>Description</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="endpointsTableBody">
+            <tr>
+              <td colspan="6" class="loading">Loading endpoints...</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <!-- Add/Edit Modal -->
+  <div id="endpointModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">Add Endpoint</h2>
+        <span class="close" id="closeModal">&times;</span>
+      </div>
+      <form id="endpointForm">
+        <input type="hidden" id="endpointId">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="httpMethod">HTTP Method *</label>
+            <select id="httpMethod" required>
+              <option value="GET">GET</option>
+              <option value="POST">POST</option>
+              <option value="PUT">PUT</option>
+              <option value="DELETE">DELETE</option>
+              <option value="PATCH">PATCH</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="controller">Controller *</label>
+            <input type="text" id="controller" required placeholder="e.g., TRS_TIERS">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="route">Route *</label>
+          <input type="text" id="route" required placeholder="e.g., /api/TRS_TIERS/SelectOrderTiers">
+        </div>
+        <div class="form-group">
+          <label for="parameters">Parameters (JSON)</label>
+          <textarea id="parameters" rows="3" placeholder='{"sec": "string"}'></textarea>
+          <small>Enter parameters as JSON object</small>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" rows="4" placeholder="Describe what this endpoint does..."></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn btn-outline" id="cancelBtn">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Endpoint</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

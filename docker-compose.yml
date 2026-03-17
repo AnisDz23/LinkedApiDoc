@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  linked-api-doc:
+    build: .
+    container_name: linked-api-doc
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - PORT=3000
+    restart: unless-stopped
