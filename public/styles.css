@@ -425,6 +425,20 @@ form {
   padding-top: 1rem;
 }
 
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--placeholder-color);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   header {

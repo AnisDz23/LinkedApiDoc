@@ -165,11 +165,28 @@ docker-compose down
 ### Filtering Endpoints
 
 Use the filter section to search for specific endpoints:
-- **HTTP Method**: Select a method from the dropdown
-- **Route**: Enter partial route text to search
-- **Controller**: Select a controller to filter by
+- **HTTP Method**: Select a method from the dropdown (filters automatically on change)
+- **Route**: Enter partial route text to search (filters in real-time with 300ms debounce)
+- **Controller**: Select a controller to filter by (filters automatically on change)
 
-Click **Apply Filters** to apply the filters, or **Clear** to reset.
+Filters are applied automatically as you interact with the controls. No need to click an "Apply" button.
+
+---
+
+## Changelog
+
+See [VERSIONS.md](VERSIONS.md) for the full changelog.
+
+### Recent Changes
+
+**v1.1.0** (2026-03-17)
+- Automatic filtering (no "ApplyFilter" button needed)
+- Real-time search in the Route field
+- Version management system
+
+**v1.0.0** (2026-03-16)
+- Base interface
+- Dark mode support
 
 ## Project Structure
 
@@ -186,6 +203,10 @@ LinkedApiDoc/
 ├── schema.sql         # Database schema
 └── README.md          # This file
 ```
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project, including version management and code style.
 
 ## License
 

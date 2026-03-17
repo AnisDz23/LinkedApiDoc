@@ -2,6 +2,19 @@
 
 const API_BASE = '';
 
+// Debounce utility function
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
 // State
 let authHeader = null;
 
@@ -78,8 +91,19 @@ function setupEventListeners() {
   // Endpoint Form
   endpointForm.addEventListener('submit', handleSubmit);
   
-  // Filters
-  document.getElementById('applyFilters').addEventListener('click', loadEndpoints);
+  // Filters - Real-time filtering (no ApplyFilter button needed)
+  filterController.addEventListener('change', function() {
+    applyFilters();
+  });
+  
+  filterMethod.addEventListener('change', function() {
+    applyFilters();
+  });
+  
+  filterRoute.addEventListener('input', debounce(function() {
+    applyFilters();
+  }, 300));
+  
   document.getElementById('clearFilters').addEventListener('click', clearFilters);
   
   // Close modal on outside click
@@ -309,6 +333,11 @@ async function handleSubmit(e) {
 // Close Modal
 function closeModal() {
   endpointModal.classList.remove('active');
+}
+
+// Apply Filters (called by event listeners)
+function applyFilters() {
+  loadEndpoints();
 }
 
 // Clear Filters
